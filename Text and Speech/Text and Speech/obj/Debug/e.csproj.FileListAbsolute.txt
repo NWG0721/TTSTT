@@ -1,0 +1,13 @@
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.exe.config
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.exe
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.pdb
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\AltoControls.dll
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\e.csproj.AssemblyReference.cache
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.Export_Audio.resources
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.main_Form.resources
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.Properties.Resources.resources
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\e.csproj.GenerateResource.cache
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\e.csproj.CoreCompileInputs.cache
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\e.csproj.CopyComplete
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.exe
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.pdb
