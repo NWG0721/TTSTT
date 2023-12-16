@@ -108,7 +108,6 @@ namespace Text_and_Speech
             stop_btn.Enabled = false;
             Pause_btn.Enabled = false;
         }
-
         //
         //Form Settings
         //

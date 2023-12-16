@@ -49,7 +49,6 @@ namespace Text_and_Speech
             {
                 formatInfo = new SpeechAudioFormatInfo(SpRate, AudioBitsPerSample.Sixteen, AudioChannel.Mono);
             }
-            //= new SpeechAudioFormatInfo(,Bit_rate, AudioChannel.Mono);// AudioBitsPerSample
         }
 
         private void SR_Bar_Scroll(object sender, EventArgs e)

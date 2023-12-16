@@ -16,6 +16,7 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Speech.AudioFormat;
+using System.Security.Cryptography;
 
 
 
@@ -28,7 +29,11 @@ namespace Text_and_Speech
         bool ready = false;
         bool Saved = false;
         string _File_Name_;
+
+        VoiceAge _VoiceAge_;
         VoiceGender voiceGender;
+
+
         Export_Audio EA = new Export_Audio();
         private void Play_btn_Click(object sender, EventArgs e)
         {
@@ -37,6 +42,7 @@ namespace Text_and_Speech
             if (Left_Box.Text != "")
             {
                 reader = new SpeechSynthesizer();
+                reader.SelectVoiceByHints(voiceGender, _VoiceAge_);
                 reader.SpeakAsync(Left_Box.Text);
                 Pause_btn.Enabled = true;
                 stop_btn.Enabled = true;
@@ -192,6 +198,42 @@ namespace Text_and_Speech
         private void P3_RB_CheckedChanged(object sender, EventArgs e)
         {
             voiceGender = VoiceGender.Male;
+        }
+
+        private void Left_Box_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void AgeNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgeTrak_Scroll(object sender, EventArgs e)
+        {
+            switch (AgeTrak.Value)
+            {
+                case 0:
+                    _VoiceAge_ = VoiceAge.NotSet;
+                    AgeNameLabel.Text = "Default";
+                    break;
+                case 1:
+                    _VoiceAge_ = VoiceAge.Child;
+                    AgeNameLabel.Text = "Child";
+                    break;
+                case 2:
+                    _VoiceAge_ = VoiceAge.Teen;
+                    AgeNameLabel.Text = "Teenager";
+                    break;
+                case 3:
+                    _VoiceAge_ = VoiceAge.Adult;
+                    AgeNameLabel.Text = "Adult";
+                    break;
+                case 4:
+                    _VoiceAge_ = VoiceAge.Senior;
+                    AgeNameLabel.Text = "Old";
+                    break;
+            }
         }
     }
 }

@@ -61,7 +61,14 @@
             this.Left_Box = new System.Windows.Forms.RichTextBox();
             this.Voice_Seting = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.AgeNameLabel = new System.Windows.Forms.Label();
+            this.AgeLabel = new System.Windows.Forms.Label();
+            this.AgeTrak = new System.Windows.Forms.TrackBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.P3_RB = new System.Windows.Forms.RadioButton();
             this.P2_RB = new System.Windows.Forms.RadioButton();
@@ -88,6 +95,10 @@
             this.panel2.SuspendLayout();
             this.Voice_Seting.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeTrak)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.Menu_1.SuspendLayout();
             this.SuspendLayout();
@@ -498,6 +509,7 @@
             this.Left_Box.Size = new System.Drawing.Size(384, 451);
             this.Left_Box.TabIndex = 0;
             this.Left_Box.Text = "The quick brown fox jumps over the lazy dog";
+            this.Left_Box.TextChanged += new System.EventHandler(this.Left_Box_TextChanged);
             // 
             // Voice_Seting
             // 
@@ -512,6 +524,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -524,16 +537,87 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Voice Setting";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.trackBar1);
+            this.groupBox4.Font = new System.Drawing.Font("G2 Rubber Stamp LET", 14.25F);
+            this.groupBox4.ForeColor = System.Drawing.Color.Silver;
+            this.groupBox4.Location = new System.Drawing.Point(6, 166);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(298, 131);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Narrator\'s voice person";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(79, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 22);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Default";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 22);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Age:";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(6, 33);
+            this.trackBar1.Maximum = 4;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(278, 45);
+            this.trackBar1.TabIndex = 0;
+            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.AgeNameLabel);
+            this.groupBox3.Controls.Add(this.AgeLabel);
+            this.groupBox3.Controls.Add(this.AgeTrak);
             this.groupBox3.Font = new System.Drawing.Font("G2 Rubber Stamp LET", 14.25F);
             this.groupBox3.ForeColor = System.Drawing.Color.Silver;
             this.groupBox3.Location = new System.Drawing.Point(310, 29);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(298, 131);
+            this.groupBox3.Size = new System.Drawing.Size(290, 131);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Narrator\'s voice person";
+            // 
+            // AgeNameLabel
+            // 
+            this.AgeNameLabel.AutoSize = true;
+            this.AgeNameLabel.Location = new System.Drawing.Point(79, 91);
+            this.AgeNameLabel.Name = "AgeNameLabel";
+            this.AgeNameLabel.Size = new System.Drawing.Size(95, 22);
+            this.AgeNameLabel.TabIndex = 2;
+            this.AgeNameLabel.Text = "Default";
+            this.AgeNameLabel.Click += new System.EventHandler(this.AgeNameLabel_Click);
+            // 
+            // AgeLabel
+            // 
+            this.AgeLabel.AutoSize = true;
+            this.AgeLabel.Location = new System.Drawing.Point(6, 91);
+            this.AgeLabel.Name = "AgeLabel";
+            this.AgeLabel.Size = new System.Drawing.Size(55, 22);
+            this.AgeLabel.TabIndex = 1;
+            this.AgeLabel.Text = "Age:";
+            // 
+            // AgeTrak
+            // 
+            this.AgeTrak.Location = new System.Drawing.Point(6, 33);
+            this.AgeTrak.Maximum = 4;
+            this.AgeTrak.Name = "AgeTrak";
+            this.AgeTrak.Size = new System.Drawing.Size(278, 45);
+            this.AgeTrak.TabIndex = 0;
+            this.AgeTrak.Scroll += new System.EventHandler(this.AgeTrak_Scroll);
             // 
             // groupBox2
             // 
@@ -723,6 +807,12 @@
             this.panel2.PerformLayout();
             this.Voice_Seting.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeTrak)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.Menu_1.ResumeLayout(false);
@@ -787,6 +877,13 @@
         private System.Windows.Forms.RadioButton P2_RB;
         private System.Windows.Forms.RadioButton P1_RB;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label AgeNameLabel;
+        private System.Windows.Forms.Label AgeLabel;
+        private System.Windows.Forms.TrackBar AgeTrak;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 
