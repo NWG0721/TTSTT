@@ -1,0 +1,26 @@
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.AssemblyReference.cache
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.Properties.Resources.resources
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.GenerateResource.cache
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.CoreCompileInputs.cache
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.exe.config
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.exe
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.pdb
+Z:\Programs\c#\Text and Speech\Text and Speech\bin\Debug\AltoControls.dll
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.CopyComplete
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.exe
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.pdb
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.main_Form.resources
+E:\Projectes\C#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.exe.config
+E:\Projectes\C#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.exe
+E:\Projectes\C#\Text and Speech\Text and Speech\bin\Debug\Text and Speech.pdb
+E:\Projectes\C#\Text and Speech\Text and Speech\bin\Debug\AltoControls.dll
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.AssemblyReference.cache
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.SuggestedBindingRedirects.cache
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.main_Form.resources
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.Properties.Resources.resources
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.GenerateResource.cache
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.CoreCompileInputs.cache
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.csproj.CopyComplete
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.exe
+E:\Projectes\C#\Text and Speech\Text and Speech\obj\Debug\Text and Speech.pdb
+Z:\Programs\c#\Text and Speech\Text and Speech\obj\Debug\Text_and_Speech.Export_Audio.resources
